@@ -1,8 +1,8 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { LoginFormComponent } from './login-form/login-form.component';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {LoginFormComponent} from './login-form/login-form.component';
 import {AngularMaterialModule} from "../../Modules/angular-material.module";
-
+import {FormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -14,7 +14,9 @@ import {AngularMaterialModule} from "../../Modules/angular-material.module";
   ],
   imports: [
     CommonModule,
-    AngularMaterialModule
+    AngularMaterialModule,
+    FormsModule
   ]
 })
-export class DynamicFormsModule { }
+export class DynamicFormsModule {
+}
