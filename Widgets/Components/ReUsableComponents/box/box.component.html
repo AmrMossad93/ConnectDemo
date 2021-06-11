@@ -1,0 +1,11 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title
+      [ngClass]="{'text-success' : projectName === 'Struman', 'text-primary' : projectName === 'Official'}">{{header}}</mat-card-title>
+    <mat-card-subtitle *ngIf="subHeader"
+                       [ngClass]="{'text-success' : projectName === 'Struman', 'text-primary' : projectName === 'Official'}">{{subHeader}}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <ng-content></ng-content>
+  </mat-card-content>
+</mat-card>
