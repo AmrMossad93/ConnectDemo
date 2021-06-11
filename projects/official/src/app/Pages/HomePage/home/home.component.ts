@@ -16,6 +16,5 @@ export class HomeComponent implements OnInit {
   onSubmit(event: any): void {
     console.log(event.userName);
     localStorage.setItem('projectName', 'Official');
-    localStorage.setItem('userName', event.userName);
   }
 }
