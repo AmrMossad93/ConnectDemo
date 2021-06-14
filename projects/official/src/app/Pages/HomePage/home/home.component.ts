@@ -14,7 +14,11 @@ export class HomeComponent implements OnInit {
   }
 
   onSubmit(event: any): void {
-    console.log(event.userName);
+    let x = {
+      userName: event.userName,
+      userPassword: event.password,
+    };
+    console.log('Official OBJ', x);
     localStorage.setItem('projectName', 'Official');
   }
 }

@@ -14,7 +14,11 @@ export class HomeComponent implements OnInit {
   }
 
   onSubmit(event: any): void {
-    console.log(event.userName);
+    let x = {
+      name: event.userName,
+      password: event.password,
+    };
+    console.log('Struman OBJ', x);
     localStorage.setItem('projectName', 'Struman');
   }
 }
